@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css"/>
     <title>Breaking Dad</title>
 </head>
 <body>
     <header>
-        <h1>Title</h1>
+        <h1 class="title">Breaking Dad</h1>
     </header>
-    <main>
-        <button id="breakingBadBtn"></button>
-        <button id="dadJokeBtn"></button>
-        <section id="textGenerate">
-
-        </section>
-    </main>
+    <div class="columns">
+        <div class="column">
+          First column
+          <button class="button is-rounded is-success" id="breakingBadBtn">Breaking bad</button>
+        </div>
+        <div class="column">
+          Second column
+          <button class="button" id="dadJokeBtn">Dad Joke</button>
+        </div>
+    </div>
+    <div class="card" id="textGenerate">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem vero eos reiciendis temporibus ratione quia in, consectetur hic aut autem, quam incidunt possimus rem cumque corrupti, quasi non placeat molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi placeat magnam reprehenderit molestias, maxime sit omnis qui dolor voluptas enim vel velit praesentium in ipsam non ad porro quasi labore doloremque modi. Tempore molestiae magnam quia optio hic cupiditate quos quaerat doloremque quibusdam officia nostrum doloribus assumenda, id sequi accusamus et, iste voluptate ab sunt eaque consequuntur! Saepe sapiente quam soluta quaerat ipsam beatae ullam fugit, culpa inventore eius delectus libero quos debitis architecto velit voluptate aliquid atque, tempora quibusdam ratione quia iusto neque asperiores. Dignissimos iste consectetur maiores laudantium distinctio illum? Deserunt eos nostrum labore reiciendis minus deleniti.
+    </div>    
     <footer>
-        <h3>Breaking bad times clicked:</h3>
-        <h3>Dad joke times clicked:</h3>
+        <h3 id="breakingBadCount">Breaking bad times clicked:</h3>
+        <h3 id="dadJokeCount">Dad joke times clicked:</h3>
     </footer>
     <script src="./assets/js/script.js"></script>
 </body>
