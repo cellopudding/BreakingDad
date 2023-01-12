@@ -24,13 +24,19 @@ align-items: center;
 
 }
 
+
+.card.has.text.centered{
+    justify-content: center;
+    align-items: center;
+    font-size: 35px
+}
+
 .column{
     text-align: center;
 }
 
-#textGenerate{
-    font-size: 35px;
-}
+
+
 
 
 
