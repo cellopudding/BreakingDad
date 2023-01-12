@@ -24,4 +24,6 @@ align-items: center;
 
 }
 
-
+.column{
+    text-align: center;
+}
