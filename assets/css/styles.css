@@ -1,0 +1,27 @@
+header{
+display: flex;
+justify-content: center;
+background-color: #0a5c0a;
+width: 100%;
+height: 200px;
+align-items: center;
+
+}
+
+.title{
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+}
+.img{
+    padding-top: 50px;
+}
+
+.headIndent{
+    text-indent: 55%;
+    display: block;
+    font-family: "Comic Sans MS";
+
+}
+
+
