@@ -24,8 +24,13 @@ align-items: center;
 
 }
 
-#textGenerate {
+.column{
+    text-align: center;
+}
+
+#textGenerate{
     font-size: 35px;
 }
+
 
 
