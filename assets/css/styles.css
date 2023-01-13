@@ -37,9 +37,20 @@ align-items: center;
 
 .column{
     text-align: center;
+    
 }
 
 
+.textStyling1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+
+
+.textStyling2 {
+    font-family: "Comic Sans MS";
+    font-size: 35px;
+}
 
 
 
