@@ -52,6 +52,18 @@ align-items: center;
     font-size: 35px;
 }
 
+footer{
+    background-image: url('../bd-footer-background.png');
+    color: white;
+    height: 200px;
+    font-size: x-large;
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
 
+.bbColumn{
+    background-color: rgba(35, 24, 24, 0.574);
+}
 
 
