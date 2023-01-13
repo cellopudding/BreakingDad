@@ -1,8 +1,9 @@
+// STARTING VARIABLES 
 var breakingBadBtn = document.getElementById("breakingBadBtn")
 var dadJokeBtn = document.getElementById("dadJokeBtn")
+var resetBtn = document.getElementById("resetBtn")
 
 // BREAKING BAD API
-
 function getApi() { 
     var requestUrl = 'https://api.breakingbadquotes.xyz/v1/quotes'
 
@@ -43,10 +44,19 @@ fetch(requestUrl, {
     
 dadJokeBtn.addEventListener("click", getDadApi );
 
+
+// VARIABLES FOR BUTTON COUNTER 
 var BBbtn = document.getElementById('breakingBadBtn');
 var BBcountEl = document.getElementById('breakingBadCount');
 var pastClicksBB = JSON.parse(localStorage.getItem('pastClicksBB')) || [];
 var BBcounter = pastClicksBB.length;
+var DJbtn = document.getElementById('dadJokeBtn');
+var DJcountEl = document.getElementById('dadJokeCount');
+var pastClicksDJ = JSON.parse(localStorage.getItem('pastClicksDJ')) || [];
+var DJcounter = pastClicksDJ.length;
+
+
+//BREAKING BAD BUTTON COUNTER
 BBcountEl.textContent = BBcounter;
 BBbtn.addEventListener('click', function(){
     pastClicksBB.push('x');
@@ -55,10 +65,7 @@ BBbtn.addEventListener('click', function(){
     BBcountEl.textContent = BBcounter;
 })
 
-var DJbtn = document.getElementById('dadJokeBtn');
-var DJcountEl = document.getElementById('dadJokeCount');
-var pastClicksDJ = JSON.parse(localStorage.getItem('pastClicksDJ')) || [];
-var DJcounter = pastClicksDJ.length;
+// DAD JOKE BUTTON COUNTER 
 DJcountEl.textContent = DJcounter;
 DJbtn.addEventListener('click', function(){
     pastClicksDJ.push('x');
@@ -67,4 +74,14 @@ DJbtn.addEventListener('click', function(){
     DJcountEl.textContent = DJcounter;
 })
 
+// RESET BUTTON FOR LOCAL STORAGE 
+function reset() {
+   localStorage.clear();
+    pastClicksBB = [];
+    pastClicksDJ = []; 
+    document.getElementById("dadJokeCount").innerHTML = pastClicksDJ.length
+    document.getElementById("breakingBadCount").innerHTML = pastClicksBB.length 
 
+}
+
+resetBtn.addEventListener("click", reset );
