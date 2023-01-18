@@ -53,11 +53,11 @@ align-items: center;
 }
 
 footer{
-    background-image: url('../bd-footer-background.png');
+    background-image: url('../img/bd-footer-background.png');
     color: white;
     height: 200px;
     font-size: x-large;
-    position: fixed;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     bottom: 0;
     width: 100%
 }
