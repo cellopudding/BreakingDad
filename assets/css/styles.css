@@ -1,11 +1,10 @@
 header{
-display: flex;
-justify-content: center;
-background-color: #0a5c0a;
-width: 100%;
-height: 200px;
-align-items: center;
-
+    display: flex;
+    justify-content: center;
+    background-color: #0a5c0a;
+    width: 100%;
+    height: 200px;
+    align-items: center;
 }
 
 .title{
@@ -13,6 +12,7 @@ align-items: center;
     padding: 10px;
     font-size: 50px;
 }
+
 .img{
     padding-top: 50px;
 }
@@ -21,14 +21,11 @@ align-items: center;
     text-indent: 55%;
     display: block;
     font-family: "Comic Sans MS";
-
 }
-
 
 .card.has.text.centered{
     justify-content: center;
     align-items: center;
-    
 }
 
 #textGenerate {
@@ -37,15 +34,12 @@ align-items: center;
 
 .column{
     text-align: center;
-    
 }
-
 
 .textStyling1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
 }
-
 
 .textStyling2 {
     font-family: "Comic Sans MS";
